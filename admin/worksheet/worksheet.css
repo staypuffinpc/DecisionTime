@@ -1,0 +1,224 @@
+#main {
+	height: 3000px;
+	top: 38px;
+	position: absolute;
+}
+
+#toolbar {
+	border-right-style: solid;
+	border-right-color: #cccccc;
+	border-left-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-right-width: 1px;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	padding: 15px;
+	color: #b3b3b3;
+	z-index: 3;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	background-color: #e8e8e8;
+    text-align: left;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}
+#item-list { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	width: 100%; }
+#item-list li {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 10px;
+	list-style-type: none;
+}
+#item-list li span { position: absolute; }
+.ui-state-default {
+	position: relative;
+	background-color: #e8e8e8;
+	color: black;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	cursor: move;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	
+
+}
+.ui-state-highlight {
+	height: 21px;
+	border-color: #666666;
+	border-style: dashed;
+	border-width: 1px;
+}
+div.number {
+	padding-right: 10px;
+	width: 30px;
+	text-align: right;
+	display: inline-block;
+	
+}
+.type {
+	color: blue;
+	text-decoration: underline;
+	display: inline;
+	cursor:pointer;
+}
+.item-info {
+	display: none;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.content {
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-top: 0px;
+	width: 1000px;
+}
+.label {
+	display: inline;
+	font-weight: bold;
+}
+input[type='text'] {
+	width: 600px;
+}
+textarea {
+	height: 100px;
+	width: 600px;
+}
+.response {
+	display: inline-block;
+	left: 50px;
+	position: relative;
+}
+#update {
+	display: none;
+	right: 3px;
+	bottom: 3px;
+	height: 200px;
+	width: 400px;
+	z-index: 99999;
+	color: white;
+	background-color: #333333;
+	position: absolute;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	opacity: 0.6;
+	padding: 10px;
+	overflow-y: scroll;
+}
+.delete {
+	font-weight: bold;
+	color: red;
+	right: 5px;
+	top: 0px;
+	position: absolute;
+	cursor: pointer;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.textShort {
+	display: inline;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+.embeddedNote {
+	background-color: rgba(255,255,0, 0.8);
+	color: black;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	display: inline;
+	font-size: 10px;
+	/*
+-webkit-transform: rotate(-45deg); 
+	-moz-transform: rotate(-45deg);
+*/
+	
+}
+.ce {
+	cursor: text;
+	-moz-user-select:text;
+	-khtml-user-select: text;
+	-webkit-user-select: text;
+	-o-user-select: text;
+	user-select: text;
+	
+
+}
+.spacetaker {
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	color: #e8e8e8;
+	display: inline-block;
+}
+#viewport {
+-moz-user-select: -moz-none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-o-user-select: none;
+user-select: none;
+
+}
+#footer li{
+	opacity: 1.0;
+
+}
+.text, .answer, .response, .embeddedContainer, .embedded {
+	display: inline;
+}
+.theresponse {
+	margin-left: 20px;
+	display: inline-block;
+}
+.addItem, .removeItem {
+	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 16px;
+	padding-left: 20px;
+	width: 150px;
+	text-decoration: underline;
+	color: blue;
+	display: block;
+}
+.addItem {
+	background-repeat: no-repeat;
+	background-image: url(../../img/plus.png);
+}
+.removeItem {
+	background-repeat: no-repeat;
+	background-image: url(../../img/minus.png);
+}
+.response {
+	margin-left: -40px;
+}
+#viewport {
+	bottom: 0px;
+}

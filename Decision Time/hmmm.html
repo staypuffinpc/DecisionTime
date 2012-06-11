@@ -1,0 +1,84 @@
+local widget = require "widget"
+ 
+local listOptions = {
+        top = 38,
+        height = _H-88,
+        --maskFile = "mask-410.png"
+}
+ 
+local list = widget.newTableView( listOptions )
+ 
+-- onEvent listener for the tableView
+local function onRowTouch( event )
+        local row = event.target
+        local rowGroup = event.view
+ 
+        if event.phase == "press" then
+                if not row.isCategory then rowGroup.alpha = 0.5; end
+ 
+        elseif event.phase == "swipeLeft" then
+                print( "Swiped left." )
+ 
+        elseif event.phase == "swipeRight" then
+                print( "Swiped right." )
+ 
+        elseif event.phase == "release" then
+ 
+                if not row.isCategory then
+                        -- reRender property tells row to refresh if still onScreen when content moves
+                        row.reRender = true
+                        print( "You touched row #" .. event.index )
+                end
+        end
+ 
+        return true
+end
+ 
+-- onRender listener for the tableView
+local function onRowRender( event )
+        local row = event.target
+        local rowGroup = event.view
+ 		event.index = storyID
+ 		local sql ="Select * from stories where story_id='"..storyID.."'"
+ 			for story in storyboard.db:nrows(sql) do
+ 			
+ 			
+ 			
+ 			end
+ 		
+
+        local text = display.newRetinaText( "Row #" .. storyID, 12, 0, "Helvetica-Bold", 18 )
+        text:setReferencePoint( display.CenterLeftReferencePoint )
+        text.y = row.height * 0.5
+        if not row.isCategory then
+                text.x = 15
+                text:setTextColor( 0 )
+        end
+ 
+        -- must insert everything into event.view:
+        rowGroup:insert( text )
+end
+ 
+-- Create 100 rows, and two categories to the tableView:
+
+local sql = "Select story_id from Stories"
+for stories in storyboard.db:nrows(sql) do
+	
+	local rowHeight, rowColor, lineColor, isCategory
+	rowColor={ 255, 255, 255, 255 }; lineColor={0,0,0,255}
+	storyID = "story"..stories.story_id
+	print(storyID)
+	list:insertRow{
+                onEvent=onRowTouch,
+                onRender=onRowRender,
+                height=60,
+                isCategory=false,
+                rowColor=rowColor,
+                lineColor=lineColor,
+    }	
+end
+	--	CREATE display objects and add them to 'group' here.
+	--	Example use-case: Restore 'group' from previously saved state.
+	
+	-----------------------------------------------------------------------------
+	

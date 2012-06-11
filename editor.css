@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Celtic Hand';
+  font-style: normal;
+  font-weight: normal;
+  src: url('http://301.byuipt.net/project/celtichd-webfont.woff') format('woff');
+}
+
+#editor {
+	background-repeat: repeat-x;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
+	padding: 10px;
+	width: 200px;
+	position: absolute;
+	top:5px;
+	right:5px;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+/* 	text-shadow: #000000 1px 1px 12px; */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+}
+#editor h5 {
+	margin-top: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-top: 12px;
+	margin-left: 0px;
+	margin-bottom: 12px;
+	margin-right: 0px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	float: none;
+	clear: both;
+	text-align: center;
+
+
+	
+}
+div#color {
+/* 	height: 550px; */
+	border-color: white;
+   	                 
+	border-width: 2px;
+   	                 
+	border-style: solid;
+   	                 
+	padding: 10px;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	width: 230px;
+	background-color: rgba(0,0,0, 0.3);
+	color: White;
+	left: 5px;
+	top: 5px;
+	position: absolute;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);border-radius: 8px;
+/* 	overflow-y: auto; */
+}
+#red, #green, #blue {
+	float: left;
+	clear: left;
+	width: 200px;
+	margin: 15px;
+}
+#red-title, #green-title, #blue-title, #red-login, #green-login, #blue-login, #red-title2, #green-title2, #blue-title2 {
+float: left;
+	clear: left;
+	width: 150px;
+	margin: 5px;
+
+
+}
+#red .ui-slider-range, #red-title .ui-slider-range, #red-login .ui-slider-range, #red-title2 .ui-slider-range { background: #ef2929; }
+#red .ui-slider-handle, #red-title .ui-slider-range, #red-login .ui-slider-range, #red-title2 .ui-slider-range { border-color: #ef2929; }
+#green .ui-slider-range, #green-title .ui-slider-range, #green-login .ui-slider-range, #green-title2 .ui-slider-range { background: #8ae234; }
+#green .ui-slider-handle, #green-title .ui-slider-range, #green-login .ui-slider-range, #green-title2 .ui-slider-range  { border-color: #8ae234; }
+#blue .ui-slider-range, #blue-title .ui-slider-range, #blue-login .ui-slider-range, #blue-title2 .ui-slider-range  { background: #729fcf; }
+#blue .ui-slider-handle, #blue-title .ui-slider-range, #blue-login .ui-slider-range, #blue-title2 .ui-slider-range { border-color: #729fcf; }
+div.color-stuff { border-bottom-color: white; border-bottom-style: solid; border-bottom-width: 1px; margin-top: 5px; font-weight: bold; clear: both; float: none; }
+input[type=radio] { }
+body {
+background-size: 100px;
+
+ }
+#height, #radius, #shadow {
+	float: left;
+/* 	clear: left; */
+	width: 13px;
+	margin: 15px;
+}
+#height .ui-slider-range { background: #e8e8e8; }
+#height .ui-slider-handle { border-color: #e8e8e8; }
+div#color ul { padding: 0px; margin: 0px; }
+div#color li { margin-left: 10px; list-style-type: none; 
+font-weight: 100;}
+
+

@@ -1,0 +1,73 @@
+#user-data {
+	min-width: 720px;
+/*
+	border: solid 1px black;
+	margin-left: 10px;
+	float: left;
+*/
+}
+
+#enroll-code {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.content {
+	padding-left: 0px;
+	padding-bottom: 50px;
+	padding-right: 0px;
+	padding-top: 20px;
+
+	width: 1000px;
+	position: absolute;
+	left: 50%;
+	margin-left: -500px;
+}
+
+#page2 {
+display: none;
+
+}
+
+#code-info {
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+#all, #class { 
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif; 
+	color: #191919; 
+	background-color: #cccccc; 
+	border-width: 1px; 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	float: left; 
+	margin-right: 10px; 
+	width: 490px;
+
+}
+#all li, #class li { 
+	border-style: solid; 
+	text-align: center; 
+	border-color: #191919; 
+	border-width: 1px; 
+	color: black; 
+	background-color: white; 
+	margin: 10px; 
+	padding: 5px; 
+	font-size: 1.2em; }
+#instructions-class-stories {
+	                  	line-height: 16px;
+	                  	font-size: 16px;
+	                  	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	                  	border-color: black;
+	                  	border-style: dashed;
+	                  	border-width: 1px;
+	                  	margin: 20px;
+	                  	padding: 10px;
+	                  }
+	

@@ -1,0 +1,48 @@
+div#left {
+	padding: 10px;
+	text-align: center;
+	border-color: #999999;
+	border-width: 1px;
+	border-style: dashed;
+	right: 50%;
+	left: 0px;
+	bottom: 6px;
+	top: 41px;
+	position: absolute;
+}
+
+div#left2 {
+	display: none;
+	padding: 10px;
+	text-align: center;
+	border-color: #999999;
+	border-width: 1px;
+	border-style: dashed;
+	right: 50%;
+	left: 0px;
+	bottom: 6px;
+	top: 41px;
+	position: absolute;
+}
+
+div#right {
+	border-color: #666666;
+	border-style: dashed;
+	border-width: 1px;
+	right: 0px;
+	position: absolute;
+	left: 50%;
+	bottom: 6px;
+	top: 41px;
+}
+
+#theCreated {
+	height: 362px;
+	width: 482px;
+	border-color: #333333;
+	border-width: 1px;
+	border-style: solid;
+}
+
+
+

@@ -1,0 +1,328 @@
+html {
+-moz-user-select: -moz-none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.deleteme {
+position: absolute;
+top: 0px;
+left: -50px;
+color: white;
+background-color: red;
+width:24px;
+height:24px;
+border-radius: 16px;
+line-height: 24px;
+text-align: center;
+font-family: sans-serif;
+cursor:pointer;
+
+
+}
+
+div.casestudy-title {
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: white;
+	right: 30px;
+	top: -15px;
+	position: absolute;
+	font-style: italic;
+	color: #9900cc;
+}
+div.example-title {
+	left: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: white;
+	top: -15px;
+	position: absolute;
+	font-style: italic;
+	color: #0099ff;
+}
+div.essentialquestion-title {
+	right: -25px;
+	top: -22px;
+	position: absolute;
+	font-style: italic;
+	color: #ffcc00;
+}
+div.keytakeaway-title {
+	right: -30px;
+	top: -20px;
+	position: absolute;
+	font-style: italic;
+	color: #ff0066;
+}
+div.review-title {
+	right: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: white;
+	top: -15px;
+	position: absolute;
+	font-style: italic;
+	color: #00cc00;
+}
+div.thoughtprovokingquestion-title {
+	right: 10px;
+	padding-right: 20px;
+	padding-left: 10px;
+	background-color: white;
+	top: -15px;
+	position: absolute;
+	font-style: italic;
+	color: #ff9900;
+}
+div.tip-title {
+	right: 10px;
+	padding-right: 20px;
+	padding-left: 10px;
+	background-color: white;
+	top: -15px;
+	position: absolute;
+	font-style: italic;
+	color: #996633;
+}
+div.question2-img {
+	right: -20px;
+	top: -22px;
+	position: absolute;
+	font-style: italic;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+}
+#content {
+	padding: 1in;
+	border-color: #999999;
+	border-width: 1px;
+	border-style: dashed;
+	right: 0px;
+	margin: 5px;
+	left: 205px;
+	bottom: 0px;
+	top: 95px;
+	position: absolute;
+	overflow-y: auto;
+	
+}
+
+ul#item-list {
+	top: 95px;
+	left: 0px;
+	position: absolute;
+	margin: 5px;
+	width: 200px;
+	padding: 0px;
+}
+ul#item-list li {
+	margin-bottom: 5px;
+	border-color: #cccccc;
+	border-style: solid;
+	border-width: 1px;
+	list-style-position: inside;
+	background-color: #e8e8e8;
+	color: black;
+	cursor: pointer;
+	padding: 5px;
+	margin-botton: 5px;
+	font-size: 12px;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	list-style-type: none;
+}
+
+#toolbar {
+border-left-width: 0px;
+border-bottom-width: 1px;
+border-right-width: 0px;
+border-top-width: 0px;
+height: 55px;
+top: 38px;
+position: absolute;
+width: 100%;
+border-color: #cccccc;
+border-style: solid;
+background-color: #e8e8e8;
+font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+.title {
+	display: inline-block;
+	padding-bottom: 17px;
+	padding-top: 17px;
+	font-size: 18px;
+	background-color: #333333;
+	color: white;
+	width: 210px;
+	text-align: center;
+}
+
+#update {
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	height: 50px;
+	color: white;
+	background-color: rgba(0,0,0,0.3);
+	padding: 5px;
+	width: 180px;
+	margin: 5px;
+	border-radius: 8px;
+	
+}
+
+div.page-name {
+	font-weight: bold;
+	font-size: 30px;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	text-align: center;
+}
+
+#pageRightClick {
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 14px;
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	padding-left: 0px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	padding-top: 3px;
+	background-color: white;
+	z-index: 6;
+	color: black;
+	display: none;
+	position: absolute;
+	-moz-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px;
+}
+
+a.pageRightClickOption {
+	padding-right: 20px;
+	display: block;
+	padding-left: 20px;
+	cursor: default;
+}
+
+a.pageRightClickOption:hover {
+	background-color: #0d36e7;
+	color: white;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4767E9), to(#0D36E7));
+	background-image: -moz-linear-gradient(#4767E9,#0D36E7);
+}
+
+
+.selected {
+	background-color: rgba(0,100,255,0.1);
+	outline: 1px rgb(0, 0, 255) solid;
+	color:#999999;
+	
+}
+
+#saves {
+	display: none;
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 14px;
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	padding-left: 0px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	padding-top: 3px;
+	background-color: white;
+	z-index: 6;
+	color: black;
+	display: none;
+	position: absolute;
+	-moz-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px;
+	left: 0px;
+	top: 85px;
+	position: absolute;
+	max-height: 400px;
+	width: 200px;
+
+}
+div#quick-instructions {
+	background-color: #ffff66;
+	color: black;
+	left: 0px;
+	position: absolute;
+	margin: 5px;
+	width: 185px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: black solid 1px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+}
+div#quick-instructions p {
+font-size: 12px;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+
+a.saved {
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;
+
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+
+}
+
+
+
+
+a.saved:hover {
+	background-color: #0d36e7;
+	color: white;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4767E9), to(#0D36E7));
+	background-image: -moz-linear-gradient(#4767E9,#0D36E7);
+}
+
+#reference_title {
+}
+
+p#filename {
+	display: inline-block;
+}
+
+table.glossary {
+	font-size: 14px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+table.glossary td {
+	padding: 10px;
+	vertical-align: top;
+}
+
+table.glossary td p {
+	margin-top: 10px;
+	margin-bottom: 0px;
+
+}
+
+td.term {
+	font-size: 12px;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 250px;
+}
+

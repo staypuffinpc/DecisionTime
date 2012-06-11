@@ -1,0 +1,136 @@
+#toolbar {
+	right: 0px;
+	left: 0px;
+	top: 38px;
+	position: absolute;
+	border-right-style: solid;
+	border-right-color: #cccccc;
+	border-left-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-right-width: 1px;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	padding: 15px;
+	color: #b3b3b3;
+	z-index: 3;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	background-color: #e8e8e8;
+    text-align: left;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}
+
+#viewport {
+	top: 80px;
+	bottom: 0px;
+}
+
+.content {
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-top: 0px;
+	width: 1000px;
+	position: relative;
+}
+
+div#term-editor {
+	display: none;
+	text-align: center;
+	background-color: #ffffff;
+	width:250px;
+	height: auto;
+	display: inline-block;
+	position: fixed;
+	top: 100px;
+	left: 10px;
+	overflow: auto;	
+	padding: 10px;
+	border: black 1px solid;
+	border-radius: 8px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+div#term-editor #inner {
+	
+}
+
+textarea {
+width:96%;
+height: 250px;
+}
+
+
+
+
+#new-term {}
+
+#findTerms {
+	
+}
+
+table.glossary {
+	font-size: 16px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+table.glossary td {
+	padding: 10px;
+	vertical-align: top;
+}
+
+table.glossary td p {
+	margin-top: 10px;
+	margin-bottom: 0px;
+
+}
+
+td.term {
+	font-size: 12px;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 250px;
+}
+
+span.page-list-count {
+
+	font-weight: bold;
+
+}
+
+.page-list {
+
+	font-size: 12px;
+
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+
+	margin-top: 6px;
+
+}
+
+#update {
+	display: none;
+	right: 3px;
+	bottom: 3px;
+	height: 200px;
+	width: 400px;
+	z-index: 99999;
+	color: white;
+	background-color: #333333;
+	position: absolute;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	opacity: 0.6;
+	padding: 10px;
+	overflow-y: scroll;
+}
+

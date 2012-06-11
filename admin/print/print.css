@@ -1,0 +1,38 @@
+#header {
+	display: none;
+}
+#greeting {
+	display: none;
+}
+#toolbar {
+	display: none;
+}
+#item-list, #quick-instructions, #update {
+	display: none;
+}
+#content {
+	position: relative;
+	margin:0px;
+	padding: 0px;
+	border:0px;
+	left: 0px;
+	top: 0px;
+}
+
+.page-break {
+	page-break-before: always;
+	width: 100%;
+	height: 1px;
+	
+}
+
+p, h1, h2, h3, h4, h5, h6, div, span, img {
+page-break-inside: avoid;
+orphans: 4;
+widows: 4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+page-break-after: avoid;
+
+}
