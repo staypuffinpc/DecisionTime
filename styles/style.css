@@ -460,6 +460,7 @@ a.dbutton {
 	color: white;
 	display: block;
 	margin: 10px;
+	background-color: #708bb8;
 	 background-image: -webkit-gradient(linear, left top, left bottom, from(#708bb8), to(#1c426a));
     background-image: -moz-linear-gradient(#708bb8,#1c426a);
 	-webkit-border-radius: 5px;
