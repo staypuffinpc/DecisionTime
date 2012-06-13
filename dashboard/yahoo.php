@@ -37,7 +37,7 @@ $link=connect(); //call function from external file to connect to database
 if ($user['user_id'] == NULL) { // this is to replace the previous gigya login
 	
 	$message = $user_name.", your user information has been added to the system.";
-	$query = "INSERT INTO Users (user_id, user_name, user_email, user_profile, UID, provider, created, role, user_image) VALUES (null,'$user_name','$email','$user_profile','$UID','yahoo',NOW(), 'Student', '$user_image')";
+	$query = "INSERT INTO Users (user_id, user_name, user_email, user_profile, provider, created, role, user_image) VALUES (null,'$user_name','$email','$user_profile','yahoo',NOW(), 'Student', '$user_image')";
 	$list = mysql_query($query) or die(mysql_error()); //execute query
 	
 	$query = "Select * From Users Where user_email='$email' and provider='yahoo'";
