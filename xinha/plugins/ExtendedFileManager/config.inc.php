@@ -68,7 +68,7 @@ $IMConfig['images_dir'] = $base_directory.'/images';
  Please remove scripting capabilities in this directory
  for this directory (i.e. disable PHP, Perl, CGI; see .htaccess file in demo_images folder).
 */
-$IMConfig['images_url'] = '/isee/images/';
+$IMConfig['images_url'] = '/decisiontime/images/';
 //$IMConfig['files_url'] = 'url/to/files_dir';
 
 /*
