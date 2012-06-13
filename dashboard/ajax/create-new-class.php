@@ -36,7 +36,7 @@ $list_stories = mysql_query($query) or die(mysql_error()); //execute query
 	$list_query = mysql_query($query) or die(mysql_error()); //execute query
 	$results = mysql_fetch_assoc($list_query);//gets info in array
 
-	if ($stories['story_privacy'] == "Public" || $stories['story_creator'] == $user['user_id'] || $user['role'] == "Admin" || $results['id']) {
+	if ($stories['story_privacy'] == "Public" || $stories['story_creator'] == $user_id || $role == "Admin") {
 
 	echo "<option value='".$stories['story_id']."'>".$stories['story_name']."</option>";
 	
