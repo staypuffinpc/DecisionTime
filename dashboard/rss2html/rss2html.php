@@ -26,7 +26,7 @@ date_default_timezone_set('America/Denver');
 // If XLMFILE is passed as part of the URL, XMLFILE=, then it will be used
 // otherwise the the file below is used.
 //$XMLfilename = "http://examlple.com/sample.xml";
-$XMLfilename = "http://github.com/benmcmurry/isee/commits/master.atom";
+$XMLfilename = "http://github.com/staypuffinpc/DecisionTime/commits/master.atom";
 
 //
 // If TEMPLATE is passed as part of the URL. TEMPLATE=, then it will be used

@@ -188,6 +188,11 @@ a.editLink:hover {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);	
 	z-index:99;
 }
+
+.editLink  img{
+	border: none;
+}
+
 a.deleteLink {
 	bottom: 0px;
 	padding: 7px;

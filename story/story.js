@@ -31,7 +31,8 @@ function line(parent, child, relation_id) { //draws lines
 		"top" : newtop,
 		"left" : left,
 		"-webkit-transform" : "rotate("+angle+"deg)", 
-		"-moz-transform" :  "rotate("+angle+"deg)"
+		"-moz-transform" :  "rotate("+angle+"deg)",
+		"-ms-transform" : "rotate("+angle+"deg)"
 	});
 	
 	$("#arrow"+relation_id).css({"top": half});
