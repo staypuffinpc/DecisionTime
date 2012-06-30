@@ -91,7 +91,7 @@ var keyboard = function(e) {if (e.keyCode == '27') //escape event listener
 			{close();} // if a popup is up, this closes it
 		}
 		if (e.keyCode == '112') {//console.log("update");$("#update").toggle();}
-};
+}};
 
 var selectorStart = function(e){
 	//console.log("selector-start");
