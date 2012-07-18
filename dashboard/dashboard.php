@@ -48,16 +48,13 @@ EOF;
 
 });
 
-
-
-
 </script>
 
 </head>
 
 <body>
 <div id="main">
-<div id="header">Interactive Story-Based E-Learning Environment
+<div id="header">Decision Time
 	<div id="greeting"><?php echo "<img src='".$_SESSION['user_image']."'/> <span class='name'> ".$_SESSION['user_name']."</span>"; ?><a id="logoutFromMenu" class="btn blockButton" href="../logout.php">Logout</a></div>
 </div>
 	

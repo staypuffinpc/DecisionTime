@@ -4,9 +4,13 @@ include_once($base_directory."/connect.php");
 $link=connect(); //call function from external file to connect to database
 /* this is the end of the includes. */
 
+//gets information for secret login by admin
 $query = "Select * from Users"; //mysql query variable
 $list = mysql_query($query) or die(mysql_error()); //execute query
+//end important information
 
+
+// checks user agent
 function using_ie() 
 { 
     $u_agent = $_SERVER['HTTP_USER_AGENT']; 
@@ -19,6 +23,7 @@ function using_ie()
     return $ub; 
 } 
 
+// invites the user to use a real web browser
 function ie_box() {
     if (using_ie()) {
         ?>
@@ -91,9 +96,11 @@ $(document).ready(function() {
 <div id="title">Decision Time</div>
 <div id="login-Icons">
 <div id="login">login with</div>
-<a href="dashboard/google.php?login"><img class="icons" src="img/google.png" /></a>
-<a href="dashboard/yahoo.php?login"><img class="icons" src="img/yahoo.png" /></a>
-<a href="dashboard/facebook.php?login"><img class="icons" src="img/facebook.png" /></a>
+
+<!-- these links load the authentication page -->
+<a href="dashboard/authenticator.php?provider=google&login"><img class="icons" src="img/google.png" /></a>
+<a href="dashboard/authenticator.php?provider=yahoo&login"><img class="icons" src="img/yahoo.png" /></a>
+<a href="dashboard/authenticator.php?provider=facebook&login"><img class="icons" src="img/facebook.png" /></a>
 
 
 </div> <!-- end loginIcons -->
