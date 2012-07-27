@@ -1,5 +1,5 @@
 <?php
-$base_directory = dirname(dirname(dirname(dirname(__FILE__))));
+$base_directory = dirname(dirname(dirname(__FILE__)));
 include_once($base_directory."/connect.php");
 include_once($base_directory."/authenticate.php");
 $link=connect(); //call function from external file to connect to database

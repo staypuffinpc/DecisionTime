@@ -1,12 +1,12 @@
 <?php
-$base_directory = dirname(dirname(dirname(dirname(__FILE__))));
+$base_directory = dirname(dirname(dirname(__FILE__)));
 include_once($base_directory."/connect.php");
 include_once($base_directory."/authenticate.php");
 $link=connect(); //call function from external file to connect to database
 /* this is the end of the includes. */
 $user_id = $_SESSION['user_id'];
 $story = $_GET['story'];
-$story = 1;
+
 
 
 $query_worksheet = "select 
