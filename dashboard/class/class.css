@@ -37,6 +37,14 @@ display: none;
 	margin-bottom: 10px;
 }
 
+#add-member-area {
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
 #all, #class { 
 	font-family: "Lucida Grande", Verdana, Arial, sans-serif; 
 	color: #191919; 
@@ -61,13 +69,63 @@ display: none;
 	padding: 5px; 
 	font-size: 1.2em; }
 #instructions-class-stories {
-	                  	line-height: 16px;
-	                  	font-size: 16px;
-	                  	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
-	                  	border-color: black;
-	                  	border-style: dashed;
-	                  	border-width: 1px;
-	                  	margin: 20px;
-	                  	padding: 10px;
-	                  }
+	line-height: 16px;
+	font-size: 16px;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	border-color: black;
+	border-style: dashed;
+	border-width: 1px;
+	margin: 20px;
+	padding: 10px;
+}
 	
+div.management-window {
+	display: none;
+	clear: both;
+	
+}
+
+input[name=searchForUser] {
+	width: 300px;
+	font-size: 18px;
+}
+
+.delete-user, .management-links {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#added {
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif; 
+	font-size: 18px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+img.icon {
+width:30px;margin-right:12px;margin-left:0px;margin-top:0px;margin-bottom:0px;float:left;
+border-radius: 6px;
+box-shadow: 0px 0px 4px, rgba(255,255,255, 0.9);
+}
+	
+
+#footer li {
+	width:100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+table {
+	border: 1px black solid;
+	padding: 0px;
+	
+}
+
+td {
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif; 
+	font-size: 16px;
+	padding: 10px;
+	
+}

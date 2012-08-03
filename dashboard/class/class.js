@@ -37,7 +37,8 @@ $(function() {
 	});
 
 
-	$(".close-icon, #fadebackground").live("click", function(){close();});	
+	$(".close-icon, #fadebackground").live("click", function(){close();}); //launches close popup function
+	$("a.delete-user").live("click", function(){delete_user(this.id);}); //launches delete user function	
 	$("#save-new-code").click(function(){
 		newCode = $("#enroll-code").val();
 		$.ajax({
@@ -49,29 +50,22 @@ $(function() {
 			}
 		});
 	});
-	$('.removeStory').click(function(){
-		var answer = confirm("Are you sure you want to remove this story from your class?");
-		if (answer) {
-		story_id = this.id.substr(6);
-		$.ajax({
-			type: "POST",
-			url: "actions/remove-story.php",
-			data: "story_id="+story_id+"&class_id="+class_id,
-			success: function(phpfile){
-				$("#saved").html(phpfile);
-			}
-		});
-		}
+
+	$("#footer li").click(function(){
+		page = this.id;
+		$(".management-window").hide();
+		$("#"+page+"-info").show();
 	});
 	
-	$("#add-story").click(function(){
-		addStory();
-	
+	$("#add-member").click(function(){
+		open(400,200);
+		$("#popup-content").load("ajax/add-member.php");
+		
 	});
 	
 });
 
-function addStory(w, h) {
+function Story(w, h) {
 	open(400,400);
 	$("#popup-content").load("ajax/add-story.php");
 
@@ -85,11 +79,33 @@ var showData = function(){
 	$("#popup-content").load("ajax/worksheet-data.php?story="+story);
 }
 
+var delete_user = function(user_id){
+	$("#ajax").show();
+	var answer = confirm("Are you sure that you want to remove this person from the class?");
+	if (answer) {
+		$.ajax({
+			type: "POST",
+			url: "actions/delete-user.php",
+			data: "user_id="+user_id,
+			success: function(phpfile){
+				$("#saved").html(phpfile);
+				$("#member-list-info").load("ajax/member-list.php");
+				$("#ajax").hide();
+			}
+		});
+	}
+
+	
+}
+
 function open(width, height) {
-	$("popup").css({
-		"width" : "200",
-		"height" : height
-	});
+	$("#popup").css({
+		"width": width,
+		"height": height,
+		"left" : "50%",
+		"top" : "50%",
+		"margin-left" : -1*width/2,
+		"margin-top" :-1*height/2	});
 	$("#popup, #fadebackground").fadeIn();
 }
 
@@ -97,3 +113,4 @@ function close(){
 	$("#popup-content").html("");
 	$("#popup, #fadebackground").fadeOut();
 }
+

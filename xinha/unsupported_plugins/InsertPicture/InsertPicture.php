@@ -1,4 +1,4 @@
-<?php
+<?PHP
   
   
   die('Developer, this plugin InsertPicture has been deprecated.  You are STRONGLY advised to use ImageManager plugin instead.  If you really must continue using this plugin, please edit xinha/unsupported_plugins/InsertPicture/InsertPicture.php to remove this notice.');

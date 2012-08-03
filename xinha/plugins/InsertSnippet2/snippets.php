@@ -11,7 +11,7 @@
  * ?>
  */
 header("Content-type: text/xml");
-print '<?phpxml version="1.0" encoding="UTF-8"?>
+print '<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE snXML PUBLIC "Xinha InsertSnippet Data File" "http://x-webservice.net/res/snXML.dtd">';
 ?>
 <snXML>

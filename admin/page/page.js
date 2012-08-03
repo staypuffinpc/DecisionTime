@@ -29,7 +29,7 @@ $(".ce").live("blur", function(){
 			$("#update").html(phpfile);
 		}
 	});
-});
+}});
 
 $("select").live("change", function(){
 	id = $(this).attr('class');
@@ -257,8 +257,9 @@ function close() {
 }
 
 function update_page() { // loads php to update story
-	
+	console.log("1");
 	$('form').submit();
+	console.log("2");
 	$.ajax({
 		type: "POST",
 			url: "actions/update_page.php",

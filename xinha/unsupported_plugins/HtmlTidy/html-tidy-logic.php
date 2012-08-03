@@ -76,4 +76,4 @@ if(!sizeof($srcLines)) {
 var ns="";
 <?php echo $jsMakeSrc; ?>
 editor.setHTML(ns);
-<?php } ?>
+<? } ?>

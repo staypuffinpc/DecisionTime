@@ -24,8 +24,8 @@ function google() {
 	         	$user_name = $firstName." ".$lastName;
 	         	$provider = "google";
 	       		/* Depending on the url this provides absolute links to the files that are needed for every file. */
-				$base_directory = dirname(dirname(__FILE__));
-				include_once($base_directory."/connect.php");
+				$base_directory = dirname(dirname(dirname(dirname(__FILE__))))."/connectFiles";
+				include_once($base_directory."/connectProject301.php");
 				$link=connect(); //call function from external file to connect to database
 				/* this is the end of the includes. */
 				
@@ -97,8 +97,8 @@ function yahoo() {
 	         	$provider = "yahoo";
 	       		/* Depending on the url this provides absolute links to the files that are needed for every file. */
 				
-				$base_directory = dirname(dirname(__FILE__));
-				include_once($base_directory."/connect.php");
+				$base_directory = dirname(dirname(dirname(dirname(__FILE__))))."/connectFiles";
+				include_once($base_directory."/connectProject301.php");
 				$link=connect(); //call function from external file to connect to database
 				/* this is the end of the includes. */
 				
@@ -171,8 +171,8 @@ function facebook() {
 	$provider = "facebook";
 	 		
 	/* Depending on the url this provides absolute links to the files that are needed for every file. */
-	$base_directory = dirname(dirname(__FILE__));
-	include_once($base_directory."/connect.php");
+	$base_directory = dirname(dirname(dirname(dirname(__FILE__))))."/connectFiles";
+	include_once($base_directory."/connectProject301.php");
 	$link=connect(); //call function from external file to connect to database
 	/* this is the end of the includes. */
 	

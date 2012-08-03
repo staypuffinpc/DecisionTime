@@ -1,6 +1,6 @@
 <?php
-$base_directory = dirname(dirname(__FILE__));
-include_once($base_directory."/connect.php");
+$base_directory = dirname(dirname(dirname(dirname(__FILE__))))."/connectFiles";
+include_once($base_directory."/connectProject301.php");
 $link=connect(); //call function from external file to connect to database
 /* this is the end of the includes. */
 

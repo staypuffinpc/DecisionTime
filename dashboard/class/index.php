@@ -1,10 +1,17 @@
 <?php
-$base_directory = dirname(dirname(dirname(__FILE__)));
-include_once($base_directory."/connect.php");
+$base_directory = dirname(dirname(dirname(dirname(dirname(__FILE__)))))."/connectFiles";
+include_once($base_directory."/connectProject301.php");
 include_once($base_directory."/authenticate.php");
 $link=connect(); //call function from external file to connect to database
 /* this is the end of the includes. */
-$class_id = $_GET['class_id'];
+if (isset($_GET['class_id']))
+	{
+		$class_id = $_GET['class_id'];
+		$_SESSION['class_id'] = $class_id;
+	}
+else {
+	$class_id = $_SESSION['class_id'];
+}
 
 $query = "Select * from Classes where class_id = '$class_id'";
 $run = mysql_query($query) or die(mysql_error());
@@ -32,6 +39,8 @@ $members = mysql_query($query) or die(mysql_error());
 <link href="../../styles/style.css" rel="stylesheet" type="text/css" />
 <link href="class.css" rel="stylesheet" type="text/css" />
 <link href="worksheet-data.css" rel="stylesheet" type="text/css" />
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>	
+
 
 <script type="text/javascript" src="../../js/jquery.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.js"></script>
@@ -46,17 +55,30 @@ var class_id = <?php echo $class_id; ?>;
 
 </script>
 <div id="header">Class Management : <?php echo $class['class_name']; ?>
-<div id="greeting"><?php echo "<img src='../".$_SESSION['user_image']."'/> <span class='name'> <span class='name'> ".$_SESSION['user_name']."</span>"."</span>"; ?><a id="logoutFromMenu" class="btn blockButton" href="../logout.php">Logout</a></div>
+<a id="home" class="upperLeft" href='../index.php'></a>
 
+<div id="greeting"><?php echo "<img src='../".$_SESSION['user_image']."'/> <span class='name'> <span class='name'> ".$_SESSION['user_name']."</span>"."</span>"; ?><a id="logoutFromMenu" class="btn blockButton" href="../logout.php">Logout</a></div>
 </div><!--  end header div -->
 <div id="viewport">
 	<div class="content" id="page1">
-	<div id="code-info">Enrollment Code: <input type="text" id="enroll-code" value="<?php echo $class['enroll_code']; ?>" /><a class="btn" id="save-new-code">Save New Enrollment Code</a><span id="saved"></span></span></div>
+	<div id="code-info">Enrollment Code: <input type="text" id="enroll-code" value="<?php echo $class['enroll_code']; ?>" /><a class="btn" id="save-new-code">Save New Enrollment Code</a><span id="saved"></span></div>	
 	<div id="manage-window">
+		<div class="management-window" id="story-manager-info">
+			<?
+			include("ajax/story-list.php");
+			?>
+		</div>
+		
+		<div class="management-window" id="user-data-window-info">
+			<? 
+			include("ajax/user-data-window.php");
+			?>
+		</div>
+		<div class="management-window" id="member-list-info">
 		<?
-/* 		include("ajax/worksheet-data.php"); */
 		include("ajax/member-list.php");
 		?>
+		</div>
 	</div>
 		
 
@@ -93,12 +115,13 @@ var class_id = <?php echo $class_id; ?>;
 </div>
 <div id="footer">
 	<ul>
-	<li>Story List</li>
-	<li>Class Members</li>
-	<li><a href='../index.php'>Main Menu</a></li>
+	<li id="story-manager">Story List</li>
+	<li id="member-list">Students</li>
+	<li id="user-data-window">User Data</li>
 	</ul>
 
 </div>
+<div id="ajax">Processing<img src="../../img/ajax-loader.gif" /></div>
 	<div id="fadebackground"></div>
 	<div id="popup"><div class="close-icon"></div><div id="popup-content"></div></div>
 
