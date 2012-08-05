@@ -2690,7 +2690,7 @@ Xinha.prototype.generate = function ()
         textarea.form.xinha_submit = textarea.form.submit;
         textarea.form.submit = function() 
         {
-          /* this.onsubmit(); */ /* I commented this out so it would work. I don't know why it stopped working all of the sudden. 8/2/2012 */
+          this.onsubmit(); 
           this.xinha_submit();
         };
       } catch(ex) {}
