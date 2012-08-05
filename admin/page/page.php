@@ -227,9 +227,9 @@ echo "<textarea name='references' id='references'>".$page['page_references']."</
 <div id="footer">
 
 <ul>
-	<li id="save" onClick="update_page();"><img src="../../img/save.png" /><br />Save</li>
-	<li id="save-return" onClick="update_exit(<?php echo $left; ?>, <?php echo $top; ?>, <?php echo $page_id; ?>);"><img src="../../img/saveMap.png" /><br />Save (Map)</li>
-	<li id="view" onClick="view(<?php echo $page_id; ?>);"><img src="../../img/saveStory.png" /><br />Save (Story)</li>
+	<li id="save" onSubmit="update_page();"><img src="../../img/save.png" /><br />Save</li>
+	<li id="save-return" onSubmit="update_exit(<?php echo $left; ?>, <?php echo $top; ?>, <?php echo $page_id; ?>);"><img src="../../img/saveMap.png" /><br />Save (Map)</li>
+	<li id="view" onSubmit="view(<?php echo $page_id; ?>);"><img src="../../img/saveStory.png" /><br />Save (Story)</li>
 	
 </ul>
 
