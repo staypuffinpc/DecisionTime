@@ -222,3 +222,9 @@ user-select: none;
 #viewport {
 	bottom: 0px;
 }
+
+div#inner {
+	text-align: left;
+	
+	
+}

@@ -46,7 +46,7 @@ $(".ce").live("blur", function(){
 			}
 		}
 	});
-});
+}});
 
 $("select").live("change", function(){
 	id = $(this).attr('class');
@@ -131,6 +131,7 @@ $(".delete").live("click", function(){
 	}
 });
 $("html").keyup(function(e){
+	console.log("f1");
 	if (e.keyCode == '112') {$("#update").toggle();}
 	
 });
@@ -162,7 +163,7 @@ function updateOrder() {
 //console.log("updating order");
 		$("ul#item-list li").each(function(){
 			data = data+"&"+this.id+"="+$(this).index();
-				
+			console.log(data);	
 		});
 		$('li > div.number').each(function(i) {
 			var $this = $(this); 
@@ -174,6 +175,7 @@ function updateOrder() {
 			url: "actions/update_order.php",
 			data: data,
 			success: function(phpfile){
+			console.log(phpfile);
 			$("#update").append(phpfile);}
 		});	
 }

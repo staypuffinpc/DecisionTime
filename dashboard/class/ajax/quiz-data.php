@@ -13,17 +13,17 @@ $class_id = $_SESSION['class_id'];
 
 $query_worksheet = "select 
 	u.user_name,
-	ua.user_id,
-	a.worksheet_id,
-	a.worksheet_type,
-	ua.user_answer,
-	a.worksheet_order,
-	a.worksheet_text,
-	a.worksheet_response 
+	uq.user_id,
+	qi.item_id,
+	qi.item_type,
+	uq.user_answer,
+	qi.worksheet_order,
+	qi.worksheet_text,
+	qi.worksheet_response 
 from 
-	User_Worksheet ua,
+	User_Quiz uq,
 	Users u,
-	Worksheet a,
+	Quiz_Items qi,
 	Class_Members cl
 where
  	ua.user_id = u.user_id

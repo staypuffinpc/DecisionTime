@@ -42,7 +42,7 @@ $list_members = mysql_query($query_members) or die(mysql_error()); //execute que
 		?>
 		<tr>
 			<td><img width="14px" src="../<? echo $members["user_image"]; ?>" /></td>
-			<td><? echo $members["user_name"]; ?></td>
+			<td><a class="user-edit" id="user-<? echo $members['user_id']; ?>"><? echo $members["user_name"]; ?></a></td>
 			<td><? echo $members["user_email"]; ?></td>
 			<td><a class="delete-user" id="<? echo $members['user_id'];?>">Remove user?</a></td>
 		</tr>

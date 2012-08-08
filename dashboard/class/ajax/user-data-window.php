@@ -18,10 +18,8 @@ while ($results = mysql_fetch_assoc($run)) {
 	?>
 		<tr>
 			<td><? echo $results['story_name']; ?></td>
-			<td><a class="management-links worksheet-data">Worksheet Data</a></td>
-			<td><a class="management-links quiz-data">Quiz Data</a></td>
-			<td><a class="management-links clear-worksheet">Clear Worksheet</a></td>
-			<td><a class="management-links clear-quiz">Clear Quiz</a></td>
+			<td><a class="management-links worksheet-data" id="worksheet-<? echo $results['story_id']; ?>" >Worksheet Data</a></td>
+			<td><a class="management-links quiz-data" id="quiz-<? echo $results['story_id']; ?>">Quiz Data</a></td>
 		</tr>
 	<?	
 }

@@ -79,6 +79,7 @@ var class_id = <?php echo $class_id; ?>;
 		include("ajax/member-list.php");
 		?>
 		</div>
+		
 	</div>
 		
 

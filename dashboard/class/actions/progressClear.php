@@ -4,14 +4,10 @@ include_once($base_directory."/connectProject301.php");
 include_once($base_directory."/authenticate.php");
 $link=connect(); //call function from external file to connect to database
 /* this is the end of the includes. */
-
-foreach($_POST['item'] as $key=>$value) {
-	$value=$value+1;
-	$query = "Update Worksheet set worksheet_order='$value' where worksheet_id='$key'";
-	$run = mysql_query($query) or die(mysql_error());
-	echo "$key updated to $value.<br />";
-	
-}
-
-
+$s = $_POST['story_id'];
+$u = $_POST['user_id'];
+$query_progressClear = "DELETE from User_Progress where progress_story='$s' and progress_user='$u'"; //mysql query variable
+$list_progressClear = mysql_query($query_progressClear) or die(mysql_error()); //execute query
+echo $query_progressClear;
+echo "progress cleared.<br />"
 ?>

@@ -90,7 +90,7 @@ input[name=searchForUser] {
 	font-size: 18px;
 }
 
-.delete-user, .management-links {
+.delete-user, .management-links, .user-edit, .user-tasks {
 	color: blue;
 	text-decoration: underline;
 	cursor: pointer;
