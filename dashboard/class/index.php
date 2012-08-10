@@ -116,9 +116,9 @@ var class_id = <?php echo $class_id; ?>;
 </div>
 <div id="footer">
 	<ul>
-	<li id="story-manager">Story List</li>
-	<li id="member-list">Students</li>
-	<li id="user-data-window">User Data</li>
+	<li id="story-manager"><img src="../../img/story.png" /><p>Story List</p></li>
+	<li id="member-list"><img src="../../img/chat.png" /><p>Students</p></li>
+	<li id="user-data-window"><img src="../../img/edit-page.png" /><p>User Data</p></li>
 	</ul>
 
 </div>

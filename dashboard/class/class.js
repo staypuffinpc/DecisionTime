@@ -1,5 +1,6 @@
 $("document").ready(function(){
 $("#story-manager-info").show();
+$("li#story-manager p, li#story-manager img").css("opacity","1")
 $(function() {
 		$( "#all, #class" ).sortable({
 			connectWith: ".connectedSortable",
@@ -60,8 +61,10 @@ $(function() {
 
 	$("#footer li").click(function(){
 		page = this.id;
+		$("#footer li img, #footer li p").css("opacity","0.5");
 		$(".management-window").hide();
 		$("#"+page+"-info").show();
+		$("#"+page+" p, #"+page+" img").css("opacity","1");
 	});
 	
 	$("#add-member").click(function(){
